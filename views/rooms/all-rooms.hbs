@@ -1,0 +1,20 @@
+<div class="container">
+
+    <h1>Nuestras habitaciones</h1>
+
+    <hr>
+
+    {{#each rooms}}
+    <p>{{name}} - precio {{price}}€
+        <br>
+        {{#if ../roles.isEditor}}
+        <a href="#" class="btn btn-sm btn-warning">Editar</a>
+        {{/if}}
+        {{#if ../roles.isAdmin}}
+        <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+        <a href="#" class="btn btn-sm btn-warning">Editar</a>
+        {{/if}}
+    </p>
+    {{/each}}
+
+</div>

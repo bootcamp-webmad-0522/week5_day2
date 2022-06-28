@@ -1,0 +1,14 @@
+<div class="container">
+
+    <h1>{{appTitle}} 🚀</h1>
+    <p>Welcome Ironhacker!</p>
+
+    <hr>
+
+    <a href="/habitaciones" class="btn btn-dark btn-lg">Acceder a las habitaciones</a>
+
+    {{#if roles.isAdmin}}
+    <a href="/admin" class="btn btn-warning btn-lg">Acceder al panel de Admin</a>
+    {{/if}}
+
+</div>
